@@ -29,7 +29,7 @@ export default async function handler(req, res) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
-      from: 'Efe Kırtasiye <onboarding@resend.dev>',
+      from: 'Efe Kırtasiye <noreply@efe-kirtasiye.com>',
       to: 'info@efe-kirtasiye.com',
       subject: `Yeni İletişim Mesajı — ${ad_soyad}`,
       html: `
